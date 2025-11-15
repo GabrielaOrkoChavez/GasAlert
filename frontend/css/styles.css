@@ -1,0 +1,468 @@
+/* styles.css - simples e responsivo */
+:root {
+  --accent: #2b8aef;
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #222;
+}
+
+ *{ box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+}
+
+.navbar{
+    background-image: linear-gradient(to right, #becbdbdc 10%, #3e4a59dc 100%) 12%;
+    display: flex;
+    align-items: center;
+    padding: 0.5vw 2vw 0.5vw 5vw;
+    gap: 13vw;
+    box-shadow: #0000008e 0px 3px 4px;
+}
+
+.carrinhoCompra img{
+    width: 2.1vw;
+}
+
+.logoV2 img{
+    width: 12vw;
+}
+
+.hind-regular {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu{
+    display: flex;
+    gap: 10vw;
+}
+
+.menu a{
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #042959;
+    font-size: 1.47vw;
+    text-shadow: #0000008e 0px 1.5px 2px;
+}
+
+.fundotopo{
+    background-image: url('../imagens/itens_imagem.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 0.9vw; 
+}
+
+.Titulo {
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Hammersmith One", sans-serif;
+    color: #CC2225;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 9.5vw;
+  margin-bottom: 8vw;
+  margin-top: 7vw;    
+  
+}
+
+.card {
+  background-color: #fafafa;  
+  border-radius:10px;
+  border: solid 1px #979797;
+  padding:12px;
+  box-shadow: #00000042 0.2vw 0.2vw 0.15vw;  
+  width: 20vw; 
+}
+
+.card img {width: 18vw;
+    height: 15vw;
+    object-fit: cover;
+    margin-bottom: 2vw;
+    margin-top: 5vw;
+    border-radius: 1vw;
+    border: solid 0.1px #979797; }
+.card h3 { margin:10px 0 6px; font-size:1.05rem; }
+.card p { margin:0 0 10px; font-size:0.95rem; color:#555; }
+.price { font-weight:700; margin-bottom:8px; }
+.btn {
+  font-family: "Hind";
+}
+
+.carrinhoCompra {
+  /* Configuração inicial para que a animação comece com um delay e no final */
+  opacity: 0; /* Começa invisível */
+  animation: fadeIn 1s ease-in-out forwards; /* Aplica a animação */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cart-item {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-bottom:12px;
+  background:white;
+  padding:10px;
+  border-radius:8px;
+}
+
+.cart-item img { width:80px; height:80px; object-fit:cover; border-radius:6px; }
+
+.small {
+  font-size:0.9rem;
+  color:#666;
+}
+
+a { color: inherit; text-decoration:none; }
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10,10,10,0.45);
+  z-index: 60;
+  padding: 20px;
+}
+.modal[aria-hidden="false"] { display: flex; }
+.modal-content { width: 100%; max-width: 560px; position: relative; }
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* form inside modal */
+.modal-content form label {
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+}
+.modal-content form input, 
+.modal-content form textarea, 
+.modal-content form select {
+  width:100%;
+  padding:8px;
+  border-radius:6px;
+  border:1px solid #ddd;
+  margin-top:4px;
+}
+
+.produto-detalhe {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.produto-info {
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  align-items: flex-start;
+  margin-bottom: 3vw;
+}
+
+.produto-info img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.produto-info .price {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+@media (max-width:600px) {
+  .card img { height:140px; }
+  .produto-info { flex-direction: column; align-items: center; }
+  .produto-info img { width: 100%; max-width: 360px; }
+}
+
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); display: flex;
+    justify-content: center; align-items: center; z-index: 1000;
+}
+.modal[aria-hidden="true"] { display: none; }
+.modal-content {
+    background-color: white; padding: 20px; border-radius: 8px;
+    max-width: 500px; width: 90%; position: relative;
+}
+.modal-close {
+    position: absolute; top: 10px; right: 10px; font-size: 24px;
+    cursor: pointer; background: none; border: none;
+}
+.btn {
+    padding: 10px 15px; background-color: #042959; color: white;
+    border: none; cursor: pointer; border-radius: 5px; margin-top: 5px;
+}
+
+.card button {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  background-image: linear-gradient(#042959 85%, #000000ea 100%);
+  color: white;
+}
+
+.card button:active {
+    box-shadow: inset 0.2vw 0.2vw 0.4vw #000000ea;
+    transform: translate(0.1vw,0.1vw);
+    background-color: #042959;
+    background-image: none;
+}
+
+.card { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; }
+.price { font-weight: bold; color: #042959;; }
+
+
+.rodape{
+    background-color: #042959;
+    box-shadow: #0000008e 0px -3px 4px;
+}
+
+
+.logoelinha{
+    padding: 1vw;
+    padding-left: 1.8vw;
+    display: flex;
+    align-items: center;
+}
+.logoelinha img{
+    width: 8vw;
+}
+
+.linhaBranca1{
+    border: solid #ffffff 0.2vw;
+    width: 87vw;
+    margin-left: 1vw;
+}
+
+.informaçõesrodape{
+    display: flex;
+    gap: 3.5vw;
+    align-items: flex-start;
+    padding-bottom: 4vw;
+}
+
+.inforodape1{
+    padding-left: 6.7vw;
+}
+
+.informaçõesrodape h1{
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-size: 2.1vw;
+    color: white;
+}
+
+.informaçõesrodape p{
+    font-family: "Halant", serif;
+    font-weight: 200;
+    font-size: 1.45vw;
+    line-height: 0.5;
+    color: white;
+}
+
+.inforodape1 img{
+    width: 9.5vw;
+    padding-top: 1vw;
+}
+
+.inputp{
+    display: grid;
+    gap: 2vw;
+}
+
+.inputp input{
+    width: 16.8vw;
+    height: 0.3vw;
+    font-family: "Halant", serif;
+    background-color: rgba(132, 158, 191, 0.8);
+    color: #fff;
+    font-size: 1.3vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.3vw;
+    box-shadow: 0.1vw 0.1vw 0.6vw 0vw rgb(26, 26, 26);
+    border: solid rgba(0, 0, 0, 0, 0.5) 0.1vw;
+    margin-bottom: 0.25vw;
+}
+
+.inputp, input::placeholder{
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+input:focus{
+    outline: none;
+    border: 0.1vw solid black;
+    box-shadow: 0 0 0 0.1vw rgba(102, 135, 172, 0.5);
+}
+
+.inputg textarea{
+    width: 18vw;
+    height: 9.5vw;
+    font-family: "Halant", serif;
+    background-color: rgba(132, 158, 191, 0.8);
+    color: #ffffff;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 0.3vw;
+    box-shadow: 0.1vw 0.1vw 0.6vw 0vw rgb(26, 26, 26);
+    border: solid rgba(0, 0, 0, 0, 0.5) 0.1vw;
+    padding: 1vw;
+}
+
+.inputg textarea::placeholder {
+  font-size: 1.3vw; 
+  color: #ffffff;
+}
+
+.areasdetexto{
+    display: flex;
+    gap: 2vw;
+}
+
+.inforodape2 h1{
+    padding-bottom: 0.3vw;
+    color: white;
+}
+
+.inforodape3{
+    padding-top: 4vw;
+}
+
+.linhaBranca2{
+    border: solid #ffffff 0.2vw;
+    width: 96.5vw;
+    margin: auto;
+}
+
+.quantidade{
+  font-size: 1vw;
+  background-color: #CC2225;
+  padding: 0.1vw 0.5vw;
+  border-radius: 2vw;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  right: 0.2vw;
+  bottom: 1.2vw;
+}
+
+.btnminhascompra{
+  box-shadow: inset -0.2vw 0 0.4vw #750809;
+  background-image: linear-gradient(#CC2225 85%,#750809 100%);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.logo{
+  font-size: 6vw;
+  margin-left: 6.7vw;
+  margin-right: 69vw;
+}
+
+.txtcomp{
+    font-family: "Hind", sans-serif;
+    font-size: 1.55vw;
+    margin: 4vw 12vw;
+    text-align: justify;
+    color: #042959;
+    margin-bottom: 10vw;
+}
+
+
+.botoes-compra .btn{
+  display: flex;
+}
+
+.botoes-compra{
+  margin-top: 8vw;
+}
+.produto-info{
+  gap: 8vw;
+}
+
+.produto-info h2{
+  width: 43vw;
+  font-size: 2.76vw;
+  font-weight: normal;
+  margin-top: unset;
+  color: #042959;
+  font-weight: 700;
+}
+
+.sensorproduto{
+  border: solid 1px #979797;
+  padding: 1.1vw 1vw;
+  border-radius: 0.3vw;
+  box-shadow: #00000042 0.2vw 0.2vw 0.15vw;
+  background-color: #fafafa;
+}
+
+.btn1{
+  padding: 1vw;
+  background-image: linear-gradient(#CC2225 85%,#750809 100%);
+  color: white;
+  border: none; cursor: pointer; 
+  border-radius: 0.5vw; 
+  margin-top: 0.5vw;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn1:active {
+    box-shadow: inset 0.2vw 0.2vw 0.4vw #750809;
+    transform: translate(0.1vw,0.1vw);
+    background-color: #CC2225;
+    background-image: none;
+}
+
+.botoes-compra .btn{
+  padding: 1vw;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  background-image: linear-gradient(#042959 85%, #000000ea 100%);
+}
+
+
+.botoes-compra .btn:active {
+    box-shadow: inset 0.2vw 0.2vw 0.4vw #000000ea;
+    transform: translate(0.1vw,0.1vw);
+    background-color: #042959;
+    background-image: none;
+}
+
+.botoes-compra button{
+  width: 30vw;
+  justify-content: center;
+  font-family: "Hind";
+  font-weight: 600;
+  font-size: 1vw;
+}

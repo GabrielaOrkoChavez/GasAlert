@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja - Página Inicial</title>
+<link rel="stylesheet" href="css/styles.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="fundotopo">
+        <nav class="navbar">
+            <a href="#" class="logoV2"><img src="imagens/logo_v2.png" alt=""></a>
+            <div class="menu">
+                <a href="index.html">home</a>
+                <a href="#">itens</a>
+                <a href="tela_funcoes.html">função</a>
+                <a href="tela_uso.html" >uso</a>
+            </div>
+            <a href="#" class="carrinhoCompra" id="open-cart-btn" class="cart-link" ><img src="imagens/img-carrinhoCompra.png"><span id="cart-count" class="quantidade">0</span></a>
+        </nav>
+        <div class="conteudoCentral">
+            <h1 class="Titulo">Nossos Produtos</h1>
+        </div>
+</div>
+
+<button id="open-my-orders-btn" class="btn" style="margin-right: 15px; margin: 1vw; background-color: #cc2225;">Minhas Compras</button>
+
+<main class="container">
+    <div class="grid">
+        <div class="card">
+            <img src="imagens/sensor1.jpg" alt="sensor de detectar gás">
+            <h3>Sensor MQ-2 de Gás</h3>
+            <p>detector de gás MQ-2</p>
+            <div class="price">R$ 20,00</div>
+            <a href="produto.html?id=1"><button class="btn">Ver mais</button></a>
+            <button class="btn" onclick="adicionarAoCarrinho('Sensor MQ-2 de Gás',20.0)">Adicionar ao carrinho</button>
+            <button class="btn" onclick="comprarAgora('Sensor MQ-2 de Gás',20.0)">Comprar agora</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/sensor2.jpg" alt="sensor de detectar gás">
+            <h3>Sensor MQ-9 de Gás</h3>
+            <p>Detector de gás MQ-9</p>
+            <div class="price">R$ 45,00</div>
+            <a href="produto.html?id=2"><button class="btn">Ver mais</button></a>
+            <button class="btn" onclick="adicionarAoCarrinho('Sensor MQ-9 de Gás',45.0)">Adicionar ao carrinho</button>
+            <button class="btn" onclick="comprarAgora('Sensor MQ-9 de Gás',45.0)">Comprar agora</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/sensor3.webp" alt="sensor de detectar gás">
+            <h3>Sensor MQ-7 de Gás</h3>
+            <p>Detector de gás MQ-7</p>
+            <div class="price">R$ 45,00</div>
+            <a href="produto.html?id=3"><button class="btn">Ver mais</button></a>
+            <button class="btn" onclick="adicionarAoCarrinho('Sensor MQ-7 de Gás',45.0)">Adicionar ao carrinho</button>
+            <button class="btn" onclick="comprarAgora('Sensor MQ-7 de Gás',45.0)">Comprar agora</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/sensor4.jpg" alt="Caneca">
+            <h3>Sensor MQ-136 de Gás</h3>
+            <p>Detector de gás MQ-136</p>
+            <div class="price">R$ 109,00</div>
+            <a href="produto.html?id=4"><button class="btn">Ver mais</button></a>
+            <button class="btn" onclick="adicionarAoCarrinho('Sensor MQ-136 de Gás',109.9)">Adicionar ao carrinho</button>
+            <button class="btn" onclick="comprarAgora('Sensor MQ-136 de Gás',109.9)">Comprar agora</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/sensor5.jpg" alt="Caneca">
+            <h3>Sensor MQ-3 de Gás</h3>
+            <p>Detector de gás MQ-3</p>
+            <div class="price">R$ 25,00</div>
+            <a href="produto.html?id=5"><button class="btn">Ver mais</button></a>
+            <button class="btn" onclick="adicionarAoCarrinho('Sensor MQ-3 de Gás',25.0)">Adicionar ao carrinho</button>
+            <button class="btn" onclick="comprarAgora('Sensor MQ-3 de Gás',25.0)">Comprar agora</button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/sensor6.jpg" alt="Caneca">
+            <h3>Sensor MQ-6 de Gás</h3>
+            <p>Detector de gás MQ-6</p>
+            <div class="price">R$ 40,00</div>
+            <a href="produto.html?id=6"><button class="btn">Ver mais</button></a>
+            <button class="btn" onclick="adicionarAoCarrinho('Sensor MQ-6 de Gás',40.0)">Adicionar ao carrinho</button>
+            <button class="btn" onclick="comprarAgora('Sensor MQ-6 de Gás',40.0)">Comprar agora</button>
+        </div>
+    </div>
+</main>
+
+<div id="cart-modal" class="modal" aria-hidden="true">
+    <div class="modal-content card">
+        <button id="close-cart-modal" class="modal-close">&times;</button>
+        <h3>Carrinho</h3>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button id="checkout-btn" class="btn">Finalizar Compra</button>
+    </div>
+</div>
+
+<div id="checkout-modal" class="modal" aria-hidden="true">
+    <div class="modal-content card">
+        <button id="close-checkout-modal" class="modal-close">&times;</button>
+        <h3>Finalizar Compra</h3>
+        <form id="checkout-form">
+            <label>Nome<input id="cliente_nome" required></label>
+            <label>CPF<input id="cliente_cpf" required></label>
+            <label>Email<input id="cliente_email" type="email"></label>
+            <label>Senha (Para Minhas Compras)<input id="cliente_senha" type="password" required></label>
+            <label>Endereço<textarea id="endereco" required></textarea></label>
+            <label>Forma de pagamento
+                <select id="pagamento_metodo">
+                    <option value="pix">Pix</option>
+                    <option value="cartao">Cartão</option>
+                    <option value="boleto">Boleto</option>
+                </select>
+            </label>
+            <div id="checkout-summary" class="small"></div>
+            <button type="submit" class="btn">Confirmar pedido</button>
+        </form>
+    </div>
+</div>
+
+<div id="my-orders-modal" class="modal" aria-hidden="true">
+    <div class="modal-content card">
+        <button id="close-my-orders-modal" class="modal-close">&times;</button>
+        <h3>Minhas Compras</h3>
+        <label>E-mail da Compra</label>
+        <input type="email" id="search-email" placeholder="Digite seu e-mail para buscar pedidos" required style="margin-bottom:15px;"/><br>
+        <label>Senha da Compra</label><input type="password" id="search-senha" placeholder="Digite a senha usada no checkout" required style="margin-bottom:15px;"/>
+        <button id="search-orders-btn" class="btn" style="margin-bottom:15px;">Buscar Pedidos</button>
+        
+        <div id="orders-list">
+            <p>Nenhum pedido encontrado. Finalize uma compra primeiro.</p>
+        </div>
+    </div>
+</div>
+
+<div class="rodape">
+        <div class="logoelinha">
+            <img src="imagens/logo_v2.png">
+            <div class="linhaBranca1"></div>
+        </div>
+        <div class="informaçõesrodape">
+            <div class="inforodape1">
+                <h1>Endereço</h1>
+                <p>Rua SC, 225 - Seu Sonho</p>
+                <p>Santa Catarina - SC, 23212-3n41</p>
+                <p>gasAlert@meusite.com</p>
+                <p>Tel.: (48) 91233-2123</p>
+                <img src="imagens/img-redesociais.png" alt="Redes Sociais">
+            </div>
+            <div class="inforodape2">
+                <h1>Fale Conosco</h1>
+                <div class="areasdetexto">
+                    <div class="inputp">
+                        <input type="text" placeholder="Nome...">
+                        <input type="text" placeholder="Email...">
+                        <input type="text" placeholder="Telefone...">
+                    </div>
+                    <div class="inputg">
+                        <textarea name="mensagem" placeholder="Insira a sua mensagem..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="inforodape3">
+                <p>Sobre nós</p>
+                <p>Politica de segurança</p>
+                <p>Nossos itens</p>
+                <p>Função dos sensores - dia a dia</p>
+                <p>Modo uso</p>
+            </div>
+        </div>
+        <div class="linhaBranca2"></div><br>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

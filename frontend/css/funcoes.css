@@ -1,0 +1,253 @@
+body{
+    margin: 0 auto;
+    cursor: context-menu;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, #becbdbdc 10%, #3e4a59dc 100%) 12%;
+    display: flex;
+    align-items: center;
+    padding: 0.5vw 2vw 0.5vw 5vw;
+    gap: 13vw;
+    box-shadow: #0000008e 0px 3px 4px;
+}
+
+.carrinhoCompra img{
+    width: 2.1vw;
+}
+
+.logoV2 img{
+    width: 12vw;
+}
+
+.hind-regular {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu{
+    display: flex;
+    gap: 10vw;
+}
+
+.menu a{
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #042959;
+    font-size: 1.47vw;
+    text-shadow: #0000008e 0px 1.5px 2px;
+}
+
+.Titulo {
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Hammersmith One", sans-serif;
+    color: #CC2225;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fundotopo{
+    background-image: url(../imagens/itens_imagem.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 0.9vw; 
+}
+
+.rodape{
+    background-color: #042959;
+    box-shadow: #0000008e 0px -3px 4px;
+}
+
+
+.logoelinha{
+    padding: 1vw;
+    padding-left: 1.8vw;
+    display: flex;
+    align-items: center;
+}
+.logoelinha img{
+    width: 8vw;
+}
+
+.linhaBranca1{
+    border: solid #ffffff 0.2vw;
+    width: 87vw;
+    margin-left: 1vw;
+}
+
+.informaçõesrodape{
+    display: flex;
+    gap: 3.5vw;
+    align-items: flex-start;
+    padding-bottom: 4vw;
+}
+
+.inforodape1{
+    padding-left: 6.7vw;
+}
+
+.informaçõesrodape h1{
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-size: 2.1vw;
+    color: #fff;
+}
+
+.informaçõesrodape p{
+    font-family: "Halant", serif;
+    font-weight: 200;
+    font-size: 1.45vw;
+    line-height: 0.5;
+    color: white;
+}
+
+.inforodape1 img{
+    width: 9.5vw;
+    padding-top: 1vw;
+}
+
+.inputp{
+    display: grid;
+    gap: 2vw;
+}
+
+.inputp input{
+    width: 16.8vw;
+    height: 0.3vw;
+    font-family: "Halant", serif;
+    background-color: rgba(132, 158, 191, 0.8);
+    color: #fff;
+    font-size: 1.3vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.3vw;
+    box-shadow: 0.1vw 0.1vw 0.6vw 0vw rgb(26, 26, 26);
+    border: solid rgba(0, 0, 0, 0, 0.5) 0.1vw;
+    margin-bottom: 0.25vw;
+}
+
+.inputp, input::placeholder{
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+input:focus{
+    outline: none;
+    border: 0.1vw solid black;
+    box-shadow: 0 0 0 0.1vw rgba(102, 135, 172, 0.5);
+}
+
+.inputg textarea{
+    width: 18vw;
+    height: 9.5vw;
+    font-family: "Halant", serif;
+    background-color: rgba(132, 158, 191, 0.8);
+    color: #ffffff;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 0.3vw;
+    box-shadow: 0.1vw 0.1vw 0.6vw 0vw rgb(26, 26, 26);
+    border: solid rgba(0, 0, 0, 0, 0.5) 0.1vw;
+    padding: 1vw;
+}
+
+.inputg textarea::placeholder {
+  font-size: 1.3vw; 
+  color: #ffffff;
+}
+
+.areasdetexto{
+    display: flex;
+    gap: 2vw;
+}
+
+.inforodape2 h1{
+    padding-bottom: 0.3vw;
+}
+
+.inforodape3{
+    padding-top: 4vw;
+}
+
+.linhaBranca2{
+    border: solid #ffffff 0.2vw;
+    width: 96.5vw;
+    margin: auto;
+}
+
+.funcoesInfo{
+    background-image: url(../imagens/fundo_funcao2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    padding-bottom: 5vw;
+}
+
+.margininfo{
+    margin-left: 6.7vw;
+    margin-right: 6.7vw;
+}
+
+.funcoesInfo h1{
+    font-family: "Hind", sans-serif;
+    color: #ffffff;
+    font-size: 2.4vw;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+.funcoesInfo p{
+    font-size: 1.50vw;
+    width: 50.7vw;
+    font-weight: 350;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: "Hind", sans-serif;
+    color: #ddd8d8;
+}
+
+.texto2{
+    display: flex;
+    gap: 13vw;
+    align-items: center;
+}
+
+.texto2 p{
+    width: 45vw;
+}
+
+.texto2 img{
+    width: 26vw;
+}
+
+.imagensfun{
+    display: flex;
+    gap: 3vw;
+    flex-direction: column;
+}
+
+.texto1{
+    display: flex;
+    gap: 4vw;
+}
+
+.linhaverm1 {
+    border: solid #CC2225 0.2vw;
+    width: 15.5vw;
+    margin-bottom: 2vw;
+}
+
+.imgf1{
+    width: 30vw;
+}

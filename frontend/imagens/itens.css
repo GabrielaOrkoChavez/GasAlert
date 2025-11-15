@@ -1,0 +1,248 @@
+body{
+    margin: 0 auto;
+    cursor: context-menu;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, #becbdbdc 10%, #3e4a59dc 100%) 12%;
+    display: flex;
+    align-items: center;
+    padding: 0.5vw 2vw 0.5vw 5vw;
+    gap: 13vw;
+    box-shadow: #0000008e 0px 3px 4px;
+}
+
+.carrinhoCompra img{
+    width: 2.1vw;
+}
+
+.logoV2 img{
+    width: 12vw;
+}
+
+.hind-regular {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu{
+    display: flex;
+    gap: 10vw;
+}
+
+.menu a{
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #042959;
+    font-size: 1.47vw;
+    text-shadow: #0000008e 0px 1.5px 2px;
+}
+
+.rodape{
+    background-color: #042959;
+    box-shadow: #0000008e 0px -3px 4px;
+}
+
+
+.logoelinha{
+    padding: 1vw;
+    padding-left: 1.8vw;
+    display: flex;
+    align-items: center;
+}
+.logoelinha img{
+    width: 8vw;
+}
+
+.linhaBranca1{
+    border: solid #ffffff 0.2vw;
+    width: 87vw;
+    margin-left: 1vw;
+}
+
+.informaçõesrodape{
+    display: flex;
+    gap: 3.5vw;
+    align-items: flex-start;
+    padding-bottom: 4vw;
+}
+
+.inforodape1{
+    padding-left: 6.7vw;
+}
+
+.informaçõesrodape h1{
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-size: 2.1vw;
+    color: #fff;
+}
+
+.informaçõesrodape p{
+    font-family: "Halant", serif;
+    font-weight: 200;
+    font-size: 1.45vw;
+    line-height: 0.5;
+    color: white;
+}
+
+.inforodape1 img{
+    width: 9.5vw;
+    padding-top: 1vw;
+}
+
+.inputp{
+    display: grid;
+    gap: 2vw;
+}
+
+.inputp input{
+    width: 16.8vw;
+    height: 0.3vw;
+    font-family: "Halant", serif;
+    background-color: rgba(132, 158, 191, 0.8);
+    color: #fff;
+    font-size: 1.3vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.3vw;
+    box-shadow: 0.1vw 0.1vw 0.6vw 0vw rgb(26, 26, 26);
+    border: solid rgba(0, 0, 0, 0, 0.5) 0.1vw;
+    margin-bottom: 0.25vw;
+}
+
+.inputp, input::placeholder{
+    color: #fff;
+    font-weight: 300;
+    
+}
+
+input:focus{
+    outline: none;
+    border: 0.1vw solid black;
+    box-shadow: 0 0 0 0.1vw rgba(102, 135, 172, 0.5);
+}
+
+.inputg textarea{
+    width: 18vw;
+    height: 9.5vw;
+    font-family: "Halant", serif;
+    background-color: rgba(132, 158, 191, 0.8);
+    color: #ffffff;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 0.3vw;
+    box-shadow: 0.1vw 0.1vw 0.6vw 0vw rgb(26, 26, 26);
+    border: solid rgba(0, 0, 0, 0, 0.5) 0.1vw;
+    padding: 1vw;
+}
+
+.inputg textarea::placeholder {
+  font-size: 1.3vw; 
+  color: #ffffff;
+}
+
+.areasdetexto{
+    display: flex;
+    gap: 2vw;
+}
+
+.inforodape2 h1{
+    padding-bottom: 0.3vw;
+}
+
+.inforodape3{
+    padding-top: 4vw;
+}
+
+.linhaBranca2{
+    border: solid #ffffff 0.2vw;
+    width: 96.5vw;
+    margin: auto;
+}
+
+.fundotopo{
+    background-image: url(imagens/itens_imagem.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 0.9vw; 
+}
+
+.Titulo {
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Hammersmith One", sans-serif;
+    color: #CC2225;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grupoimgSensores img{
+    width: 18vw;
+    height: 15vw;
+    object-fit: cover;
+    margin-bottom: 2vw;
+    margin-top: 5vw;
+    border-radius: 1vw;
+    border: solid 0.1px #979797;
+}
+
+.grupoimgSensores{
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 1.5vw;
+    margin-top: 7vw;    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    margin-bottom: 8vw;
+    gap: 9.5vw;
+    line-height: 0.3;
+}
+
+.produto{
+    border: solid 1px #979797;
+    padding: 1.1vw 1vw;
+    border-radius: 0.3vw;
+    box-shadow: #00000042 0.2vw 0.2vw 0.15vw;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+}
+
+.preco{
+    color: #042959;
+}
+
+.produto:hover{
+    transform: scale(1.05);
+
+}
+
+.promocao{  
+    text-transform: uppercase;
+    padding: 1vw;
+    width: 7.8vw;
+    background-color: #CC2225;
+    color: #ffffff;
+    border-radius: 0.5vw;
+    margin-bottom: -4vw;
+}
+
+.linha1{
+    border: solid #ffffff 0.2vw;
+    width: 50vw;
+    margin: auto;
+}
