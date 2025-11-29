@@ -24,10 +24,10 @@ HOST=localhost
 # Opcional — facilita conectar com uma única linha no código:
 DATABASE_URL=postgresql://postgres:senai@localhost:5432/loja_db
 ````
-instalar dependencias
+Instalar dependencias
 ```bash
 npm install express pg cors dotenv
 ````
 
-
+Crie no pgAdmin, etc o banco de dados - na pasta backend/migrations tem tudo já definido
 
