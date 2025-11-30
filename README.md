@@ -2,7 +2,7 @@
 
 Este é o repositório destinado ao site de nosso sistema de aprendizagem 😃
 
-no site haverá:
+No site haverá:
 - mudança de telas
 - banco de dados após a realização da compra
 - informações gerais destinadas ao aplicativo
@@ -24,7 +24,7 @@ HOST=localhost
 # Opcional — facilita conectar com uma única linha no código:
 DATABASE_URL=postgresql://postgres:senai@localhost:5432/loja_db
 ````
-Instalar dependencias
+Instalar dependências
 ```bash
 npm install express pg cors dotenv
 ````
