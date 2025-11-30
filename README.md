@@ -31,3 +31,7 @@ npm install express pg cors dotenv
 
 Crie no pgAdmin, etc o banco de dados - na pasta backend/migrations tem tudo já definido
 
+Ele estará rodando na porta 
+http://localhost:3000/
+
+
